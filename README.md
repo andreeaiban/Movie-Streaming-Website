@@ -1,7 +1,6 @@
 # Project1-355
 
-WEB LIVE CLICK HERE https://andreeaiban.github.io/Project1-355/
-[LIVE WEBSITE HERE](https://andreeaiban.github.io/Project1-355)
+[LIVE WEBSITE CLICK HERE](https://andreeaiban.github.io/Project1-355)
 
 
 
