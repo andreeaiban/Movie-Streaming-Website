@@ -1,4 +1,20 @@
 # Project1-355
+
+WEB LIVE CLICK HERE https://andreeaiban.github.io/Project1-355/
+[LIVE WEBSITE HERE](https://andreeaiban.github.io/Project1-355)
+
+
+
+
+
+
+
+
+
+
+
+
+
 Write a white paper outlining the following concepts and answer the following questions:
 what is your business 
 what is the business ethos,
