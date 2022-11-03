@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=style.css>
+
+
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  
+
+
+</head>
+
+
+<body>
+
+<div class="navbar">
+    <a href="./index.html">Home</a>
+      
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Genre
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+        <a href="./action.html">Action</a>		
+		<a href="./comedy.html">Comedy</a>
+		<a href="./documentary.html">Documentary</a>
+		<a href="./drama.html">Drama</a>
+		<a href="./horror.html">Horror</a>
+  </div>    
+  </div>
+    <div class="contacts">
+        <a href="./contacts.html">Contacts</a>
+    </div>    
+    <div class="shoppingCart">      
+      <a href="./shoppingCart.html">Shopping Cart</a>
+    </div>
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+    <!-- header -->
+    <h1 class="text-center head m-4">Checkout Page</h1>
+    <!-- header -->
+    <!-- icons starts here -->
+    <div class="icons">
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-dollar-sign bg p-4 mr-4"></i>Pay Online</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-arrows-alt-h bg p-4 mr-4"></i>Watch in 4k Online </h2>
+            </div>
+        </div>
+
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="m-5 bord shadow-lg"><i class="far fa-thumbs-up bg p-4 mr-4"></i>Quality Assured</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-stopwatch bg p-4 mr-4"></i>Rent Movies for a Week</h2>
+            </div>
+        </div>
+    </div>
+    
+    <h4 style="color:red;">The movies you have selected for streaming </h4>
+     <h4 style="color: black;">Total Price: $0.00 </h4>
+
+     <div style="text-align:center">
+      <button>Check Out & Start Streaming</button>
+      <button>Cancel</button>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=style.css>
+<script src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- same explaination as index file -->
+<div class="navbar">
+    <a href="./index.html">Home</a>
+      
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Genre
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+        <a href="./action.html">Action</a>		
+		<a href="./comedy.html">Comedy</a>
+		<a href="./documentary.html">Documentary</a>
+		<a href="./drama.html">Drama</a>
+		<a href="./horror.html">Horror</a>
+  </div>    
+  </div>
+    <div class="contacts">
+        <a href="./contacts.html">Contacts</a>
+    </div>    
+    <div class="shoppingCart">      
+      <a href="./shoppingCart.html">Shopping Cart</a>
+    </div>
+</div>
+
+<!-- -->
+<section><h4 style="text-align: left;">Our contacts</h4></section>
+
+<!-- this  section just has a simple logo of twitter and facebook which  also
+      links to the respective website. -->
+
+<br>
+
+
+<h4 style="text-align:left; font-size:14px;">For faster response. Please, reach out to us through email.</h4>
+
+<!-- We have a form through which the user can input their name, email and reason for contacting
+us through email and click submit. The 'name' and 'email' are taken as a text input using input tag. 
+For the 'reason'part we used a textarea so that user can type in more words. 
+The 'submit is a button tag which uses a sent() method which mimmics the website confirming
+that the user's input was recieved.-->
+<form>
+  <!-- fieldset tag groups the related elemnts into a form. -->
+  <fieldset style="width:50%">
+  <label> Name :</label> 
+  <input type="text" name="name">
+  <br>
+  <label>  Email : </label> 
+  <input type="text" name="email">
+  <br> 
+  <label>Reason : </label><br>
+  <textarea rows="5" cols="50" name="description">
+  Enter description here..</textarea>
+  <br>
+  <button onclick="sent(this);">send</button>
+  
+  <!-- <input type="submit" name="cart" value="Send"> 
+</fieldset>
+</form>
+<fieldset>
+
+</fieldset> -->
+<form>
+  
+</form>
+</body>
+</html>

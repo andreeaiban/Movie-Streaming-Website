@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=style.css>
+<script src="script.js" async></script>
+
+</head>
+<body>
+
+  <!-- This is the Home page file -->
+
+
+  <!-- navigation part of html  
+        We have a navigation bar that includes 'home', 'genre', 'shopping cart' and 'contacts'.
+        'Home', 'shopping cart' and 'contacts' just link to a specific html file.
+        The genre however has a dropdown feature (using a class called dropdown).
+        It has buttons which link to specific html files of different genres. -->
+
+<div class="navbar">
+    <a href="./index.html">Home</a>
+    
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Genre
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+        <a href="./action.html">Action</a>		
+		<a href="./comedy.html">Comedy</a>
+		<a href="./documentary.html">Documentary</a>
+		<a href="./drama.html">Drama</a>
+		<a href="./horror.html">Horror</a>
+  </div>    
+  </div>
+    <div class="contacts">
+        <a href="./contacts.html">Contacts</a>
+    </div>    
+    <div class="shoppingCart">      
+      <a href="./shoppingCart.html">Shopping Cart</a>
+    </div>
+</div>
+
+<!-- introduction section of our website's home page 
+    - has 2 heading tags -->
+<section>
+<h1>Movie Streaming Service</h1>
+<h3 style=" text-align: center;">A video streaming service is an on demand online entertainment source for TV shows, movies and other streaming media. <br>
+  These services provide an alternative to cable and satellite on demand service, often at a lower cost.
+  <br> Use of streaming services often requires fees, either per view or subscription.</h3>
+  <br>
+  <h4> Web Development Contributors: Andreea Ibanescu, Arthur Korchkov, Samriddha Malla, Dhawa Lama, Benjamin Ng</h4>
+
+</section>
+
+<br>
+<br>
+<!-- This section has a searchable search box  -->
+<section>
+  <div class="searchable">
+
+    <!-- we have our first form in our home page here!
+      It takes text as an input and is a search box in which users can type in letters
+      and any items (movies) that match the typed input is displayed from a list 
+      of movies.
+      A search_movie() method is invoked once a user types any letter-->
+    <form>
+      <input  type="text" id="myInput" onkeyup="search_movie()" placeholder="Search movie..">
+    </form>  
+  </div>
+</section>
+
+<!-- This section has a list of movie options that are available in our website. 
+      Each item in the unordered list contains a link and an image of the respective movie. -->
+<section id="listed">
+  <ul id="myUL" class="centered">
+    <form action="" method="post">
+      
+  <li>
+    <h3 class="tile" style=" text-align:center;"  href="#spiderman">Spider-Man
+      <input type="checkbox" id="spider" class="pl" name="movie_list[]" value="spiderman">
+      <br>
+    <img src="spiderman.png" alt="spiderman" style="width:300px; height:450px;">
+    </h3>
+    
+  </li>
+
+  <li><h3 class="tile" style=" position: relative;  text-align:center;"  href="#thenorthman">The Northman
+    <input type="checkbox" id="northman" class="pl" name="movie_list[]" value="the north man">
+    <br>
+    <img src="northman.png" alt="northman" style="width:300px; height:450px;">
+  </h3>
+  </li>
+
+  <li><h3 class="tile" style=" text-align:center;" href="#deadpool">Deadpool 2
+    <input type="checkbox" id="deadpool" class="pl" name="movie_list[]" value="deadpool">
+    <br>
+    <img src="deadpool2.png" alt="deadpool" style="width:300px; height:450px;" >
+  </h3>
+  </li>
+
+  <li><h3 class="tile" style=" text-align:center;"  href="#rushhour">Rush Hour
+    <input type="checkbox" id="rushhour" class="pl" name="movie_list[]" value="rush hour">
+    <br>
+    <img src="Rushhour.png" alt="rushhour" style="width:300px; height:450px;">
+  </h3>
+  </li>
+
+  <li><h3  class="tile" style=" text-align:center;"  href="#asib">A Star is Born
+    <input type="checkbox" id="StarisBorn" class="pl" name="movie_list[]" value="A Star Is Born">
+    <br>
+    <img src="Starisborn.png" alt="asib" style="width:300px; height:450px;">
+  </h3></li>
+
+  <li><h3 class="tile"  style=" text-align:center;"  href="#notebook">Notebook
+    <input type="checkbox" id="notebook" class="pl" name="movie_list[]" value="notebook">
+    <br>
+    <img src="notebook.png" alt="notebook" style="width:300px; height:450px;">
+  </h3></li>
+
+  <li><h3 class="tile" style=" text-align:center;"   href="#thelastdance">The Last Dance
+    <input type="checkbox" id="lastdance" class="pl" name="movie_list[]" value="the last dance">
+    <br>
+    <img src="lastdance.png" alt="lastdance" style="width:300px; height:450px;">
+  </h3></li>
+
+  <li><h3 class="tile" style=" text-align:center;"  href="#thechinahustle">The China Hustle
+    <input type="checkbox" id="chinahustle" class="pl" name="movie_list[]" value="china hustle">
+    <br>
+    <img src="chinahustle.png" alt="chinahustle" style="width:300px; height:450px;;">
+  </h3></li>
+
+  <li><h3 class="tile" style=" text-align:center;"  href="#it">It
+    <input type="checkbox" id="it" name="movie_list[]" value="it">
+    <br>
+    <img src="It.png" alt="it" style="width:300px; height:450px;">
+  </h3></li>
+
+  <li><h3 class="tile" style=" text-align:center;"  href="#us">Us
+    <input type="checkbox" id="us" name="movie_list[]" value="us"> <br>
+    <img src="Us.png" alt="us" style="width:300px; height:450px;">
+  </h3>
+  </li>
+  <!-- <input type="button" value="Make selection" onclick="handleCheckbox()"/> -->
+  <button onclick="getCheckboxValue()" type="button">Submit</button>    
+  <br>
+  </form>
+  </ul>
+</section>
+
+<h4 style="color:green" id="result"></h4> 
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=style.css>
+<script src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- same explaination as index file -->
+<div class="navbar">
+    <a href="./index.html">Home</a>
+      
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Genre
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+        <a href="./action.html">Action</a>		
+		<a href="./comedy.html">Comedy</a>
+		<a href="./documentary.html">Documentary</a>
+		<a href="./drama.html">Drama</a>
+		<a href="./horror.html">Horror</a>
+  </div>    
+  </div>
+    <div class="contacts">
+        <a href="./contacts.html">Contacts</a>
+    </div>    
+    <div class="shoppingCart">      
+      <a href="./shoppingCart.html">Shopping Cart</a>
+    </div>
+</div>
+
+<!-- Note: We need to write something else here -->
+<h1 style="text-align:center;">ACTION MOVIES</h1>
+<p>Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats.</p>
+
+  <!-- Note : same explaination for all genre html file. -->
+
+
+  <!-- This is an genre html file.
+        Every genre html file displays info on 2 movies.
+        The movies info is displayed using a table.
+        The table has 3 rows, 4 header cells and 8 data cells. the first row is the 
+        header cell and 2nd and 3rd rows are info about the movie.
+
+        Our table has 4 cloumns namely 'movie' which displays the movie 
+        name and image, 'description' which displays a short description of the 
+        movie, 'year' which displays the year that the movie was released and 
+        'ratings' which displays user ratings. -->
+
+<table style="background-color:aliceblue;"">
+  <!--we have 4 header cells defined by th tag in the first row.  -->
+  <tr> 
+    <th class="image" style="width:250px;">Movie</th> <!-- first header cell, we have a class called 'image' to do css styling. 
+    data cells below this header tag follow the same css styling format.-->
+    <th class="description">Description</th> <!-- 2nd header cell, we have a class called 'description' for css styling.-->
+    <th class="year">Year</th> <!-- 3rd header cell -->
+    <th class="ratings">Ratings</th> <!-- 4th header cell -->
+  </tr>
+
+  <!-- we have the 2nd row, which displays the first movie.-->
+  <tr>
+    <td> 
+      <div class="polaroid" >
+      <img src="spiderman.png" alt="spiderman" style="width:100%; height:100%">
+      <div class="name">
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=t06RUxPbp_c&ab_channel=SonyPicturesEntertainment';">
+        Trailer: Spider-Man</button>
+      </div>
+    </div>
+    </td>
+    
+    <td><p> With Spider-Man's identity now revealed, 
+      our friendly neighborhood web-slinger is unmasked 
+      and no longer able to separate his normal life as 
+      Peter Parker from the high stakes of being a superhero. 
+      When Peter asks for help from Doctor Strange, the 
+      stakes become even more dangerous, forcing him to 
+      discover what it truly means to be Spider-Man.</p></td>
+    <td><p>2021</p></td>
+    <td><p>9.7</p></td>
+  </tr>
+
+  <!-- we have the 2nd row, which displays the first movie.-->
+  <tr>
+    <td>
+      <div class="polaroid">
+      <img src="northman.png" alt="northman" style="width:100%;  height:100%">
+      <div class="name">
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=oMSdFM12hOw&ab_channel=FocusFeatures';">
+          Trailer: The Northman</button>
+      </div>
+    </div>
+    </td>
+
+    <td><p>Prince Amleth is on the verge of becoming a man 
+      when his father is brutally murdered by his uncle, 
+      who kidnaps the boy's mother. Two decades later,
+       Amleth is now a Viking who raids Slavic villages. 
+       He soon meets a seeress who reminds him of his 
+       vow -- save his mother, kill his uncle, avenge 
+       his father.</p>
+      </td>
+    <td><p>2022</p></td>
+    <td><p>8.1</p></td>
+  </tr>
+</table>
+</body>
+</html>
